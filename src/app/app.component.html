@@ -1,0 +1,51 @@
+<main role="main" class="container">
+  <div class="jumbotron text-center">
+      <h1><b>CURSOS CAST</b></h1>
+      <p class="lead text-info">Controle de cursos - CastGroup</p>
+  </div>
+</main>
+<div class="navbar navbar-expand-md navbar-aqua bg-aqua mb-6" role="navigation">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="#">HOME<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="http://github.com/vansley/" target="_blank">GITHUB</a>
+          </li>
+      </ul>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        GERENCIAR CURSOS
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" routerLink="cadastrar-curso">Cadastrar Cursos</a></li>
+        <li><a class="dropdown-item" routerLink="consultar-cursos">Consultar Cursos</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</div>
+
+<form class="form-inline my-2 my-lg-0 pl-3-lg">
+
+  <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+  <button class="btn btn-aqua ml-1" type="submit">
+  </button>
+
+</form>
+</div>
+<div class="container mt-3">
+  <div class="card">
+    <div class="body">
+      <!-- local para exibir o conteúdo das paginas-->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
